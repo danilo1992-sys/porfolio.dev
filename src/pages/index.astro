@@ -1,18 +1,15 @@
 ---
 import Layout from "@/layouts/Layout.astro"
-
+import ContactForm from '@/components/ContactForm.astro'
 import AboutMe from "@/components/AboutMe.astro"
 import Badge from "@/components/Badge.astro"
 import Briefcase from "@/components/icons/Briefcase.astro"
 import CodeIcon from "@/components/icons/Code.astro"
 import Experience from "@/components/Experience.astro"
-import GitHubIcon from "@/components/icons/GitHub.astro"
-import LinkedInIcon from "@/components/icons/LinkedIn.astro"
-import MailIcon from "@/components/icons/Mail.astro"
 import ProfileCheck from "@/components/icons/ProfileCheck.astro"
 import Projects from "@/components/Projects.astro"
 import SectionContainer from "@/components/SectionContainer.astro"
-import SocialPill from "@/components/SocialPill.astro"
+import SocialMedia from '@/components/SocialMedia.astro'
 ---
 
 <Layout
@@ -54,20 +51,7 @@ import SocialPill from "@/components/SocialPill.astro"
         >
       </h2>
 
-      <nav class="flex gap-4 mt-8 flex-wrap">
-        <SocialPill href="https://linkedin.com/in/midudev">
-          <LinkedInIcon class="size-4 md:size-6" />
-          LinkedIn
-        </SocialPill>
-        <SocialPill href="https://github.com/midudev">
-          <GitHubIcon class="size-4 md:size-6" />
-          GitHub
-        </SocialPill>
-        <SocialPill href="mailto:miduga@gmail.com">
-          <MailIcon class="size-4 md:size-6" />
-          miduga@gmail.com
-        </SocialPill>
-      </nav>
+      <SocialMedia />
     </SectionContainer>
 
     <SectionContainer id="experiencia">
@@ -99,5 +83,6 @@ import SocialPill from "@/components/SocialPill.astro"
       </h2>
       <AboutMe />
     </SectionContainer>
+    <ContactForm />
   </main>
 </Layout>

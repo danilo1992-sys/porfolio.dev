@@ -1,0 +1,21 @@
+---
+import GitHubIcon from "@/components/icons/GitHub.astro"
+import LinkedInIcon from "@/components/icons/LinkedIn.astro"
+import MailIcon from "@/components/icons/Mail.astro"
+import SocialPill from "@/components/SocialPill.astro"
+---
+
+<nav class="flex gap-4 mt-8 flex-wrap">
+<SocialPill href="https://linkedin.com/in/midudev">
+    <LinkedInIcon class="size-4 md:size-6" />
+    LinkedIn
+</SocialPill>
+<SocialPill href="https://github.com/midudev">
+    <GitHubIcon class="size-4 md:size-6" />
+    GitHub
+</SocialPill>
+<SocialPill href="mailto:miduga@gmail.com">
+    <MailIcon class="size-4 md:size-6" />
+    miduga@gmail.com
+</SocialPill>
+</nav>
